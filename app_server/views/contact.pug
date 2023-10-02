@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .container
+    h1 Contact Us
+    p If you have any questions, please feel free to contact us using the form below:
+
+    form(action='/send-message', method='post')
+      .form-group
+        label(for='name') Name
+        input#name.form-control(type='text', name='name', required)
+      .form-group
+        label(for='email') Email
+        input#email.form-control(type='email', name='email', required)
+      .form-group
+        label(for='message') Message
+        textarea#message.form-control(name='message', rows='5', required)
+      button.btn.btn-primary(type='submit') Send Message

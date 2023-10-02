@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= pageTitle
+    link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .container
+      .row
+        .col-md-6.col-md-offset-3
+          ul.nav.nav-tabs
+            li.active
+              a(href='#login', data-toggle='tab') Login
+            li
+              a(href='#signup', data-toggle='tab') Sign Up
+          .tab-content
+            #login.tab-pane.active
+              h1 Login
+              form(action='/login', method='POST')
+                .form-group
+                  label(for='login-username') Username
+                  input.form-control(type='text', id='login-username', name='username', required)
+                .form-group
+                  label(for='login-password') Password
+                  input.form-control(type='password', id='login-password', name='password', required)
+                button.btn.btn-primary(type='submit') Login
+            #signup.tab-pane
+              h1 Sign Up
+              form(action='/signup', method='POST')
+                .form-group
+                  label(for='signup-username') Username
+                  input.form-control(type='text', id='signup-username', name='username', required)
+                .form-group
+                  label(for='signup-email') Email
+                  input.form-control(type='email', id='signup-email', name='email', required)
+                .form-group
+                  label(for='signup-password') Password
+                  input.form-control(type='password', id='signup-password', name='password', required)
+                button.btn.btn-primary(type='submit') Sign Up
+
+    script(src='/javascripts/jquery-1.11.1.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
