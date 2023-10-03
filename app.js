@@ -3,12 +3,15 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-require('./app_server/models/db'); 
 
+var app = express();
+
+var routesApi = require('./app_api/routes/index');
 var indexRouter = require('./app_server/routes/index');
 var usersRouter = require('./app_server/routes/users');
 
-var app = express();
+// Set the port for your application
+var PORT = process.env.PORT || 4000;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'app_server', 'views'));
@@ -19,6 +22,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Define API routes before other routes
+app.use('/api', routesApi);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -37,6 +43,11 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+});
+
+// Start the server
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
 
 module.exports = app;

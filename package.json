@@ -1,7 +1,7 @@
 {
   "name": "lotus",
   "version": "1.0.0",
-  "description": "<<<<<<< HEAD\r # Loc8\r WPM project\r =======\r # lotus-resto\r >>>>>>> 44e59b8adc318c74ccb50a3ae642f542d9ad9f6b",
+  "description": "<<<<<<< HEAD\r # Lotus\r WPM project\r =======\r # lotus-resto\r >>>>>>> 44e59b8adc318c74ccb50a3ae642f542d9ad9f6b",
   "main": "app.js",
   "dependencies": {
     "accepts": "^1.3.8",
@@ -120,6 +120,7 @@
     "with": "^7.0.2"
   },
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
