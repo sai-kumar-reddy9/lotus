@@ -144,7 +144,7 @@ body {
 
 .page-header {
   background-color: rgba(0, 0, 0, 0.5); /* Darker background color */
-  color: #8bbae0; 
+  color: #ffffff; 
   padding: 20px; /* Add some padding for spacing */
 }
 .panel-primary .panel-heading {
@@ -556,7 +556,7 @@ h3,
 
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 h5,
@@ -4738,8 +4738,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default {
-  background-color: #ad1d28;
-  border-color: #911821;
+  background-color: #110607f3;
+  border-color: #0c0304e7;
 }
 
 .navbar-default .navbar-brand {
@@ -5344,7 +5344,7 @@ a.list-group-item.active > .badge,
     padding-left: 60px;
   }
   .jumbotron h1 {
-    font-size: 63px;
+    font-size: 51px;
   }
 }
 
@@ -5696,7 +5696,7 @@ a.list-group-item:focus {
 .list-group-item.active .list-group-item-text,
 .list-group-item.active:hover .list-group-item-text,
 .list-group-item.active:focus .list-group-item-text {
-  color: #acf1f6;
+  color: #acf1f6d3;
 }
 
 .list-group-item-heading {
@@ -5711,7 +5711,7 @@ a.list-group-item:focus {
 
 .panel {
   margin-bottom: 20px;
-  background-color: #13a0aa;
+  background-color: #0f14149d;
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -5867,17 +5867,17 @@ a.list-group-item:focus {
 }
 
 .panel-default > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #0d747c;
+  border-bottom-color: #081011;
 }
 
 .panel-primary {
-  border-color: #ad1d28;
+  border-color: #070d0e;
 }
 
 .panel-primary > .panel-heading {
   color: #ffffff;
-  background-color: #ad1d28;
-  border-color: #ad1d28;
+  background-color: #090811;
+  border-color: #0c0102;
 }
 
 .panel-primary > .panel-heading + .panel-collapse .panel-body {
@@ -7291,7 +7291,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Baloo Bhai';font-size: 40px;
+  
 }
 
 .text-primary {

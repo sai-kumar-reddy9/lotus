@@ -9,7 +9,7 @@ npm install -g express-generator
 express
 npm install -->(Installing dependencies)
 npm audit fix --force -->(execute until 0vulnerabilities)
-SET DEBUG-career_builder:* ; npm start 
+SET DEBUG-lotus-restor:* ; npm start 
 
 npm install -g nodemon -->(monitoring the node commands)
 express --view=Pug --git 
@@ -22,6 +22,8 @@ Git commands:
 git init 
 git add .
 git commit -m "1st commit"
+git status
+git branch
 git remote add origin   "https://github.com/coder049"
 git push -u origin main
 

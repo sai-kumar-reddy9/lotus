@@ -13,5 +13,8 @@ router.get('/about', ctrlOthers.about);
 router.get('/login',ctrlOthers.login );
 router.get('/menu',ctrlOthers.menu );
 router.get('/contact',ctrlOthers.contact);
+router.post('/send-message',ctrlOthers.sai);
+router.post('/location',ctrlOthers.review);
+router.post('/contact',ctrlOthers.contacts);
 module.exports = router;
 
